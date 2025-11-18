@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MALVAINAS</title>
+  <title>malvAinas</title>
   <style>
     :root { --accent: #ff2d92; }
-    body { margin:0; font-family: system-ui; background:#0a0a0a; color:#fff; text-align:center; }
-    header { height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; background: linear-gradient(#000000cc, #000), url('hero.jpg') center/cover no-repeat; }
-    h1 { font-size: 4rem; margin:0; text-shadow: 0 0 20px #000; }
-    p { font-size:1.3rem; max-width:700px; }
-    nav { position:fixed; top:0; width:100%; padding:1rem; background:#000000cc; backdrop-filter:blur(10px); z-index:10; }
-    nav a { color:white; margin:0 1rem; text-decoration:none; font-weight:bold; }
-    section { padding:5rem 2rem; justify-content:center; }
-    .spotify { max-width:800px; margin:2rem auto; }
-    footer { background:#111; padding:3rem; justify-content:center;}
-    @media (max-width:768px) { h1{font-size:2.5rem;} nav a{margin:0 .5rem; font-size:0.9rem;} }
-   .center { text-align:center; padding:4rem 1rem; }
-   .big { font-size:1.6rem; margin:1rem 0; }
-   .icon-link { font-size:2rem; margin:0 1rem; text-decoration:none; }
+    body { margin:0; font-family: system-ui; background:#0a0a0a; color:#fff; }
+    nav { position:fixed; top:0; width:100%; padding:1rem; background:#000000cc; backdrop-filter:blur(10px); z-index:10; text-align:center; }
+    nav a { color:white; margin:0 1.5rem; text-decoration:none; font-weight:bold; }
+    .container { max-width:900px; margin:0 auto; padding:2rem; text-align:center; }
+    section { padding:6rem 2rem; }
+    footer { background:#111; padding:4rem; text-align:center; }
+    @media (max-width:768px) { nav a{margin:0 .5rem; font-size:0.9rem;} }
   </style>
 </head>
-<body> 
- <div style="max-width:900px; margin:0 auto; padding:2rem; text-align:center;">
+<body>
+
+  <!-- ====================== NAVIGATION ====================== -->
   <nav>
     <a href="#home">Home</a>
     <a href="#music">Music</a>
@@ -30,49 +25,52 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <header id="home">
-    <h1>MALVAINAS</h1>
-    <p>OUR MANIFESTO:
-        TAKE NOTE.</p>
-     <p>1. THE LESS GOVERNMENT THE BETTER.
-     2. THE LESS GOVERNMENT THE BETTER.
-    3. THE LESS GOVERNMENT THE BETTER.</p>
---
-<h1 style="font-size:5rem; color:#ff0044; text-shadow:0 0 30px #ff0044;">
-  malvAinas
-</h1>
+  <div class="container">
 
-<p style="font-size:1.8rem; color:#aaaaaa; text-align:center; max-width:700px; margin:2rem auto;">
-  Post-punk from the edge of the world.
-</p>
- --  
-  </header>
+    <!-- ====================== HERO SECTION ====================== -->
+    <section id="home" style="height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; background: linear-gradient(#000000cc, #000), url('hero.jpg') center/cover no-repeat;">
+      <h1 style="font-size:5rem; margin:0; text-shadow:0 0 30px #000;">malvAinas</h1>
+      <p style="font-size:1.8rem; margin:2rem 0;">OUR MANIFESTO:<br>TAKE NOTE.</p>
+      <p style="font-size:1.4rem; line-height:2;">
+        1. THE LESS GOVERNMENT THE BETTER.<br>
+        2. THE LESS GOVERNMENT THE BETTER.<br>
+        3. THE LESS GOVERNMENT THE BETTER.
+      </p>
+    </section>
 
-  <section id="music">
-    <h2>Latest Release</h2>
-    <!-- Just paste your Spotify / Bandcamp / YouTube embed here -->
-    <div class="spotify">
-      <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0SawbnPk6H9nwN3xKs7Qkj?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </div>
-  </section>
+    <!-- ====================== MUSIC SECTION ====================== -->
+    <section id="music">
+      <h2 style="font-size:3rem; margin-bottom:2rem;">Latest Release</h2>
+      <div style="max-width:800px; margin:0 auto;">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0SawbnPk6H9nwN3xKs7Qkj?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+    </section>
 
-  <!-- <section id="shows" style="background:#111;">
-    <h2>Upcoming Shows</h2>
-    <p>15 Feb 2026 – Berlin, Lido → <a href="#">Tickets</a></p>
-    <p>22 Mar 2026 – Hamburg, Molotow → <a href="#">Tickets</a></p>
-  </section> --> 
+    <!-- ====================== SHOWS SECTION (currently hidden – remove <!-- --> to activate) ====================== -->
+    <!--
+    <section id="shows" style="background:#111;">
+      <h2 style="font-size:3rem; margin-bottom:2rem;">Upcoming Shows</h2>
+      <p style="font-size:1.5rem;">15 Feb 2026 – Berlin, Lido → <a href="#" style="color:var(--accent);">Tickets</a></p>
+      <p style="font-size:1.5rem;">22 Mar 2026 – Hamburg, Molotow → <a href="#" style="color:var(--accent);">Tickets</a></p>
+    </section>
+    -->
 
-<section id="contact" class="center">
-  <h2>Contact</h2>
-  <p class="big">malvainasband@gmail.com</p>
-  <p>
-    <a href="https://open.spotify.com" class="icon-link" style="color:#1DB954;">Spotify</a>
-    <a href="https://x.com" class="icon-link" style="color:#fff;">X</a>
-  </p>
-</section>
- </div>
+    <!-- ====================== CONTACT SECTION ====================== -->
+    <section id="contact">
+      <h2 style="font-size:3rem; margin-bottom:2rem;">Contact</h2>
+      <p style="font-size:1.8rem; margin:1.5rem 0;">malvainasband@gmail.com</p>
+      <p style="font-size:3rem;">
+        <a href="https://open.spotify.com" style="color:#1DB954; text-decoration:none; margin:0 2rem;">Spotify</a>
+        <a href="https://x.com" style="color:#fff; text-decoration:none; margin:0 2rem;">X</a>
+      </p>
+    </section>
 
-  <footer>© 2025 MALVAINAS – Burocrat kiss my ass</footer>
+  </div>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer>
+    © 2025 malvAinas – Bureaucrat kiss my ass
+  </footer>
 
 </body>
 </html>
