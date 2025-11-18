@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <div style="max-width:900px; margin:0 auto; padding:2rem; text-align:center;">
  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MALVAINAS</title>
@@ -17,10 +16,13 @@
     .spotify { max-width:800px; margin:2rem auto; }
     footer { background:#111; padding:3rem; justify-content:center;}
     @media (max-width:768px) { h1{font-size:2.5rem;} nav a{margin:0 .5rem; font-size:0.9rem;} }
+   .center { text-align:center; padding:4rem 1rem; }
+   .big { font-size:1.6rem; margin:1rem 0; }
+   .icon-link { font-size:2rem; margin:0 1rem; text-decoration:none; }
   </style>
 </head>
 <body> 
-
+ <div style="max-width:900px; margin:0 auto; padding:2rem; text-align:center;">
   <nav>
     <a href="#home">Home</a>
     <a href="#music">Music</a>
@@ -35,8 +37,15 @@
      <p>1. THE LESS GOVERNMENT THE BETTER.
      2. THE LESS GOVERNMENT THE BETTER.
     3. THE LESS GOVERNMENT THE BETTER.</p>
+--
+<h1 style="font-size:5rem; color:#ff0044; text-shadow:0 0 30px #ff0044;">
+  malvAinas
+</h1>
 
-
+<p style="font-size:1.8rem; color:#aaaaaa; text-align:center; max-width:700px; margin:2rem auto;">
+  Post-punk from the edge of the world.
+</p>
+ --  
   </header>
 
   <section id="music">
@@ -53,15 +62,14 @@
     <p>22 Mar 2026 – Hamburg, Molotow → <a href="#">Tickets</a></p>
   </section> --> 
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>malvainasband@gmail.com</p>
-    <p>
-      <!-- <a href="https://instagram.com/malvainas">Instagram</a> •  -->
-      <a href="https://spotify.com">Spotify</a> • 
-      <a href="https://x.com">X</a>
-    </p>
-  </section>
+<section id="contact" class="center">
+  <h2>Contact</h2>
+  <p class="big">malvainasband@gmail.com</p>
+  <p>
+    <a href="https://open.spotify.com" class="icon-link" style="color:#1DB954;">Spotify</a>
+    <a href="https://x.com" class="icon-link" style="color:#fff;">X</a>
+  </p>
+</section>
  </div>
 
   <footer>© 2025 MALVAINAS – Burocrat kiss my ass</footer>
