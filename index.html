@@ -3,11 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The Correct — Anti-socialist punk rock from the future. Less government, more freedom.">
   <title>THE CORRECT</title>
-
-  <!-- FAVICON -->
-  <link rel="icon" href="favicom01.png" type="image/png">
+  <link rel="icon" href="favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="favicon.png">
 
   <style>
@@ -15,65 +12,66 @@
     html { scroll-behavior: smooth; }
     body { margin:0; font-family: system-ui, -apple-system, sans-serif; background:#0a0a0a; color:#fff; }
     nav { position:fixed; top:0; left:0; width:100%; padding:1rem; background:#000000ee; backdrop-filter:blur(12px); z-index:100; text-align:center; }
-    nav a { color:#fff; margin:0 1.5rem; text-decoration:none; font-weight:700; font-size:1.1rem; }
+    nav a { color:#fff; margin:0 1.5rem; text-decoration:none; font-weight:700; }
     nav a:hover { color:var(--accent); }
-    .container { max-width:900px; margin:0 auto; padding:2rem; }
-    section { padding:7rem 1rem; min-height:60vh; }
-    h2 { font-size:3.5rem; margin-bottom:2rem; }
-    footer { background:#000; padding:4rem 1rem; text-align:center; font-size:1rem; color:#666; }
+
+    /* CENTRAMOS TODO PERFECTAMENTE */
+    .wrapper { max-width: 900px; margin: 0 auto; padding: 0 1rem; }
+    section { padding: 7rem 0; text-align: center; }
+    h2 { font-size: 3.5rem; margin-bottom: 3rem; }
+    
+    footer { background:#000; padding:4rem 1rem; text-align:center; color:#666; font-size:1rem; }
 
     @media (max-width:768px) {
       nav a { margin:0 .7rem; font-size:0.95rem; }
       h2 { font-size:2.8rem; }
-      section { padding:5rem 1rem; }
+      section { padding:5rem 0; }
     }
   </style>
 </head>
 <body>
 
-  <!-- NAVIGATION -->
   <nav>
     <a href="#home">Home</a>
     <a href="#music">Music</a>
-    <!-- <a href="#shows">Shows</a> -->
     <a href="#contact">Contact</a>
   </nav>
 
-  <div class="container">
+  <div class="wrapper">
 
-    <!-- HERO -->
-    <section id="home" style="display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; background:linear-gradient(180deg, #000000ee, #0a0a0a);">
-      <img src="logo_thecorrect.png" alt="THE CORRECT" style="width:90%; max-width:420px; margin-bottom:2rem; filter:drop-shadow(0 0 50px #000);">
-      <p style="font-size:2rem; margin:2rem 0 1rem; letter-spacing:2px;">OUR MANIFESTO:</p>
-      <p style="font-size:1.5rem; line-height:1.8; max-width:700px; color:#ccc;">
+    <!-- HERO – ya estaba centrado -->
+    <section id="home" style="display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;min-height:100vh;background:linear-gradient(180deg,#000000ee,#0a0a0a);">
+      <img src="logo_thecorrect01.png" alt="THE CORRECT" style="width:90%;max-width:420px;filter:drop-shadow(0 0 50px #000);">
+      <p style="font-size:2rem;margin:2rem 0 1rem;letter-spacing:2px;">OUR MANIFESTO:</p>
+      <p style="font-size:1.5rem;line-height:1.8;max-width:700px;color:#ccc;">
         1. THE LESS GOVERNMENT THE FREER YOU ARE.<br>
         2. THE LESS GOVERNMENT THE LOUDER YOUR VOICE.<br>
         3. THE LESS GOVERNMENT THE SOONER YOU OWN YOUR LIFE.
       </p>
     </section>
 
-    <!-- MUSIC -->
+    <!-- MUSIC – ahora perfectamente centrado -->
     <section id="music">
       <h2>LATEST RELEASE</h2>
-      <iframe style="border-radius:16px; border:0;" 
-        src="https://open.spotify.com/embed/playlist/0SawbnPk6H9nwN3xKs7Qkj?utm_source=generator&theme=0" 
-        width="100%" height="420" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <div style="max-width:800px;margin:0 auto;">
+        <iframe style="border-radius:16px;border:0;" 
+          src="https://open.spotify.com/embed/playlist/0SawbnPk6H9nwN3xKs7Qkj?utm_source=generator&theme=0" 
+          width="100%" height="420" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- CONTACT – ahora perfectamente centrado -->
     <section id="contact">
       <h2>CONTACT & FOLLOW</h2>
-      <p style="font-size:2rem; margin:2rem 0;">
-        <a href="https://open.spotify.com" target="_blank" style="color:#1DB954; margin:0 2rem; text-decoration:none;">Spotify</a>
-        <a href="https://x.com/THECORRECT" target="_blank" style="color:#fff; margin:0 2rem; text-decoration:none;">X</a>
-        <a href="https://instagram.com/thecorrectband" target="_blank" style="color:#e4405f; margin:0 2rem; text-decoration:none;">Instagram</a>
-      </p>
-      <!-- <p style="font-size:1.3rem; color:#aaa;">hi@thecorrect.com</p> -->
+      <div style="font-size:2rem;margin:3rem 0;">
+        <a href="https://open.spotify.com" target="_blank" style="color:#1DB954;margin:0 2rem;text-decoration:none;">Spotify</a>
+        <a href="https://x.com/THECORRECT" target="_blank" style="color:#fff;margin:0 2rem;text-decoration:none;">X</a>
+        <a href="https://instagram.com/thecorrectband" target="_blank" style="color:#e4405f;margin:0 2rem;text-decoration:none;">Instagram</a>
+      </div>
     </section>
 
   </div>
 
-  <!-- FOOTER -->
   <footer>
     © 2025 THE CORRECT<br>
     Bureaucrats kiss my ass.
